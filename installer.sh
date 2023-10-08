@@ -21,7 +21,7 @@ if command -v nvm >/dev/null 2>&1; then
 else
     echo "nvm was not found"
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
-    exec bash -l
+    sudo exec bash -l
     command -v nvm
     #. ~/.bashrc
     # if command -v nvm >/dev/null 2>&1; then
